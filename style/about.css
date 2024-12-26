@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: rgb(1, 1, 34);
+  --text-color: #fff;
+  --shadow-color: white;
+  --custom-color:#FFD700 ;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color); /* Light gray background for the entire website */
+  color: #333; /* Dark text color for better readability */
+}
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--background-color); /* White background for the about section */
+  padding: 0 20px; /* Remove or adjust padding */
+}
+
+.about-content {
+  position: relative;
+  top: -80px; /* Adjust to bring the content upwards */
+  margin-top: 0; /* Remove any space above the content */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  background: var(--background-color);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(-20px);
+  opacity: 0;
+  animation: fadeInUp 1s forwards;
+}
+
+
+/* Image Styling */
+.image-container {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-image {
+  width: 100%;
+  position: relative;
+  /* bottom: 20px; */
+  height: 290px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.about-image:hover {
+  transform: scale(1.05);
+}
+
+/* Text Content Styling */
+.text-content {
+  flex: 2;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  color: var(--custom-color); /* Blue color for the heading */
+  margin-bottom: 20px;
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.about-text {
+  font-size: 1rem;
+  color:var(--text-color); /* Dark gray color for text */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  padding: 10px 20px;
+  background-color: var(--custom-color); /* Blue button background */
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #fee555; /* Darker blue on hover */
+}
+
+/* Animation for fadeInUp */
+@keyframes fadeInUp {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Animation for slideInFromLeft */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 10px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+  }
+
+  .about-btn {
+    font-size: 0.9rem;
+  }
+
+  .image-container {
+    padding: 10px;
+  }
+
+  .about-image {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-btn {
+    width: 100%;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}

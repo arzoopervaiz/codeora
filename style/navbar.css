@@ -1,0 +1,148 @@
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  position: relative;
+}
+
+ /* .logo h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+} */
+
+.theme-toggle {
+  cursor: pointer;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+ .navbar ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.navbar ul li a {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+ .navbar ul li a:hover {
+  text-decoration: underline;
+  filter: drop-shadow(0 0 10px var(--shadow-color));
+}
+
+ .button {
+  margin-right: 20px;
+}
+
+ .button .btn {
+  width: 120px;
+  padding: 8px;
+  background-color: transparent;
+  border: 2px solid var(--text-color);
+  outline: none;
+  box-shadow: 0 0 10px var(--shadow-color);
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+  transition: 0.4s;
+}
+
+
+ .button .btn:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+  box-shadow: 0 5px 14px var(--shadow-color);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-top: 60px;
+}
+
+
+
+
+
+
+
+
+
+.logo p{
+  font-size: 30px;
+  font-weight: bold;
+  float: left;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  font-family: "Playwrite CU", cursive;
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.logo p:hover{
+  box-sizing: border-box;
+  color: var(--custom-color);
+  text-shadow: 0 0 50px var(--custom-color),
+               0 0 110px var(--custom-color),
+               0 0 165px var(--custom-color),
+               0 0 220px var(--custom-color);
+               /* 0 0 270px goldenrod; */
+  animation: animate 5s linear infinite;
+}
+@keyframes animation {
+  0%{
+      filter: hue-rotate(0deg);
+  }
+  100%{
+      filter: hue-rotate(360deg);
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
